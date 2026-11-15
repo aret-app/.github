@@ -1,6 +1,7 @@
 name: 🗺️ Map display or style issue
 description: The map looks wrong in Aret (style, rendering, missing layer) — not wrong data in OpenStreetMap
 labels: ["area:maps", "needs-triage"]
+projects: ["aret-app/1"]
 body:
   - type: markdown
     attributes:
