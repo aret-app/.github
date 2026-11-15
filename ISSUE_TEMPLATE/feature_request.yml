@@ -1,6 +1,7 @@
 name: ✨ Feature request
 description: Suggest an idea or improvement
 labels: ["type:feature", "needs-triage"]
+projects: ["aret-app/1"]
 body:
   - type: textarea
     id: problem
