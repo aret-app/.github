@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & ideas
+    url: https://github.com/aret-app/aret-docs/discussions
+    about: Ask questions and discuss ideas before opening an issue.
+  - name: 🔒 Security vulnerability
+    url: https://github.com/aret-app/.github/blob/main/SECURITY.md
+    about: Please report vulnerabilities privately, not as an issue.
+  - name: 🗺️ Fix map data on OpenStreetMap
+    url: https://www.openstreetmap.org/
+    about: Wrong trail, name or POI? Fix it at the source.

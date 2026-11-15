@@ -1,0 +1,60 @@
+name: 🐞 Bug report
+description: Something doesn't work as expected
+labels: ["type:bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! Please don't include personal locations (like your home) in screenshots or GPX files.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - iOS app
+        - Backend / API
+        - Maps / tiles
+        - Route planning
+        - Docs / website
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Tap …
+        3. See …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version / build
+      placeholder: e.g. 0.3.1 (42)
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: e.g. iPhone 15, iOS 18.1
+  - type: dropdown
+    id: connectivity
+    attributes:
+      label: Were you online?
+      options:
+        - Online
+        - Offline / no signal
+        - Unsure
+  - type: textarea
+    id: extra
+    attributes:
+      label: Logs, screenshots or a GPX sample
+      description: Drag files here. Remove or trim anything that reveals private locations.

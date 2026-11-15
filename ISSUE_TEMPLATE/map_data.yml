@@ -1,0 +1,30 @@
+name: 🗺️ Map display or style issue
+description: The map looks wrong in Aret (style, rendering, missing layer) — not wrong data in OpenStreetMap
+labels: ["area:maps", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If a trail, name or POI is **wrong or missing in OpenStreetMap itself**, please fix it on [openstreetmap.org](https://www.openstreetmap.org/) — it reaches Aret on the next rebuild.
+        Use this form for problems with how Aret *shows* the map.
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks wrong?
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Map link or coordinates
+      placeholder: e.g. https://www.openstreetmap.org/#map=15/46.5577/7.9726
+    validations:
+      required: true
+  - type: input
+    id: zoom
+    attributes:
+      label: Zoom level and online/offline map
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot

@@ -1,0 +1,36 @@
+name: ✨ Feature request
+description: Suggest an idea or improvement
+labels: ["type:feature", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do on the trail or while planning, and what's in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like it to work?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - Recording
+        - Maps / offline maps
+        - Route planning
+        - Sync / account
+        - Sharing / social
+        - Privacy
+        - Other
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other apps or workarounds you've used.
