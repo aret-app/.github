@@ -13,7 +13,10 @@ Thanks for helping build Aret! This guide applies to every repository in the org
 3. Commit using [Conventional Commits](https://www.conventionalcommits.org/): `feat(tracks): add GPX export`.
 4. Sign off every commit (`git commit -s`), see *Developer Certificate of Origin* below.
 5. Open a pull request, link the issue (`Closes #123`), fill in the template.
-6. `main` is protected: a PR needs one approving review and green CI. We squash-merge.
+6. `main` is protected: changes only land through a PR, and required CI checks must pass. We squash-merge.
+   **During the prototype phase the core team doesn't review each other's PRs** (0 approvals required), so run the
+   checks locally before opening a PR and call out risky changes (migrations, auth, secrets) in its description.
+   Outside contributions are still reviewed by a maintainer.
 
 ## Developer Certificate of Origin (DCO)
 By signing off a commit you certify that you wrote the code or have the right to submit it under the repository's license ([developercertificate.org](https://developercertificate.org/)). Use `git commit -s` to add the `Signed-off-by:` line.
